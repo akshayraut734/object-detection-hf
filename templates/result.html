@@ -1,0 +1,19 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img src="data:image/jpeg;base64,{{ image }}" alt="Uploaded Image">
+    <p>Predicted Label: {{ predicted_label }}</p>
+    <p>Confidence Score: {{ confidence_score }}</p>
+    <p>Is Dangerous: {{ is_dangerous }}</p>
+    <form action="/predict" method="post">
+        <button type="submit">Upload Another Image</button>
+    </form>
+</body>
+</html>

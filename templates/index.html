@@ -1,0 +1,21 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+</head>
+<body>
+    <h1>Upload Image</h1>
+    <form action="/predict" method="post">
+        <label for="image_url">Image URL:</label>
+        <input type="text" id="image_url" name="image_url">
+        <button type="submit">Predict</button>
+    </form>
+    <!-- Add the "Exit" button -->
+    <form action="/exit" method="get">
+        <button type="submit">Exit</button>
+    </form>
+</body>
+</html>
